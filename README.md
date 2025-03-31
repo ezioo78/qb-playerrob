@@ -1,5 +1,7 @@
+# [JOIN MOCRO RP DISCORD SERVER](https://discord.gg/zWQjcWSC)
+
 # QB Player Robbery Script
-[JOIN MOCRO RP DISCORD SERVER](https://discord.gg/zWQjcWSC)
+
 A FiveM script for QBCore framework that allows players to rob other players by accessing their inventory through a stash interface.
 
 ## Features
