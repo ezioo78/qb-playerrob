@@ -1,5 +1,5 @@
 # QB Player Robbery Script
-
+[JOIN MOCRO RP DISCORD SERVER](https://discord.gg/zWQjcWSC)
 A FiveM script for QBCore framework that allows players to rob other players by accessing their inventory through a stash interface.
 
 ## Features
@@ -42,13 +42,6 @@ To rob a player:
 5. Drag items between inventories to take or return items
 6. Close the interface when finished
 
-### Admin Usage
-
-If you have PS-AdminMenu installed, moderators and admins can:
-1. Open the admin menu
-2. Navigate to the player options
-3. Select a player and use the "Open Inventory" option
-4. View and modify the target player's inventory
 
 ## Configuration
 
@@ -96,39 +89,10 @@ This script integrates with the QBCore radial menu, adding a "Rob Player" option
 2. Find the interactions section
 3. Add the provided entry for player robbery
 
-## Database Setup
-
-If you don't already have an `inventories` table, run the following SQL query:
-
-```sql
-CREATE TABLE IF NOT EXISTS `inventories` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `identifier` varchar(255) NOT NULL,
-  `items` longtext DEFAULT NULL,
-  `label` varchar(255) DEFAULT NULL,
-  `maxweight` int(11) DEFAULT 100000,
-  `slots` int(11) DEFAULT 50,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `identifier` (`identifier`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-```
-
-## Development
-
-This script uses standard QBCore event patterns and inventory management. Key components:
-
-- `client.lua` - Handles player interactions and UI
-- `server.lua` - Manages item transfers and database operations
-- `config.lua` - Contains all configurable settings
-- `fxmanifest.lua` - Resource manifest and dependencies
 
 ### Security Considerations
 
 The script includes permission checks for admin functions and verification of player status before allowing robbery. It also prevents exploitation by requiring physical proximity and appropriate target state (handcuffed/surrendered).
-
-## License
-
-[MIT License](https://opensource.org/licenses/MIT)
 
 ## Support
 
